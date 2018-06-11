@@ -23,3 +23,11 @@ end
 
 
 puts number_c
+
+puts "Did it work for you? 1 = yes | 2 = no"
+finish = gets.chomp
+if finish == "1" then 
+puts "yay"
+elsif 
+puts "Oh Well"
+end
