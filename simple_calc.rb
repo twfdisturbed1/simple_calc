@@ -2,7 +2,6 @@ puts "Do you want to +(1) or -(2) or *(3) or /(4)"
 
 loop do
 symbol = gets.chomp.to_i
-puts "symbol is #{symbol}"
 
 if symbol == 1 then
     puts "Addition"
@@ -12,6 +11,7 @@ if symbol == 1 then
     number_b = gets.chomp
 number_c = number_a.to_i + number_b.to_i
 puts  "This is your Answer" 
+print "#{number_a} + #{number_b} =  " 
 puts number_c
 break
 elsif symbol == 2 then
@@ -22,6 +22,7 @@ puts "Subtraction"
     number_b = gets.chomp
 number_c = number_a.to_i - number_b.to_i
 puts  "This is your Answer" 
+print "#{number_a} - #{number_b} =  " 
 puts number_c
 break
 elsif symbol == 3 then
@@ -31,7 +32,8 @@ elsif symbol == 3 then
     puts "Enter your second number"
     number_b = gets.chomp
 number_c = number_a.to_i * number_b.to_i
-puts  "This is your Answer" 
+puts  "This is your Answer"
+print "#{number_a} * #{number_b} =  "  
 puts number_c   
 break 
 elsif symbol == 4 then
@@ -40,11 +42,12 @@ elsif symbol == 4 then
     number_a = gets.chomp
     puts "Enter your second number"
     number_b = gets.chomp
-number_c = number_a.to_i / number_b.to_i
+    number_c = number_a.to_i / number_b.to_i
 puts  "This is your Answer" 
+print "#{number_a} / #{number_b} =  " 
 puts number_c
 break
-elsif 
+elsif
     puts "Wrong Choice"        
 
 end
