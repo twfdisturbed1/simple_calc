@@ -42,8 +42,13 @@ elsif symbol == 4 then
     number_a = gets.chomp
     puts "Enter your second number"
     number_b = gets.chomp
+    if 
+        number_b == "0"
+        puts " Can't Dived by 0"
+        abort 
+    end
     number_c = number_a.to_i / number_b.to_i
-puts  "This is your Answer" 
+    puts  "This is your Answer" 
 print "#{number_a} / #{number_b} =  " 
 puts number_c
 break
